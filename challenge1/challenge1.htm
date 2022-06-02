@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(1, 12, 12);
+    }
+    .main{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        
+    }
+   .content{
+       width: 35%;
+       background-color: rgb(40, 2, 56);
+       text-align: justify;
+       padding-left: 25px;
+       padding-left: 25px;
+   }
+   h2{
+        color: white;
+       
+        font-family:'Times New Roman', Times, serif ;
+        font-weight: 800;
+   }
+   p{
+       color: rgb(155, 149, 149);
+      
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+   .photo{
+       width: 35%;
+      height: fit-content;
+      margin-top: 2px;
+   }
+.para{
+    display: flex;
+    gap: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    display: flex;
+    flex-direction: column-reverse;
+    
+  }
+  .content,.photo{
+      margin: 0%;
+      gap: 0;
+  }
+  .photo{
+      width: 90%;
+  }
+  .content{
+      width: 84%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main {
+    display: flex;
+    
+    
+  }
+  .content, .photo{
+      width: 40%;
+  }
+  .content{
+      height: 256px;
+      margin-top: -1px;
+  }
+}
+</style>
+<body>
+    <div class="main">
+        <div class="content"> 
+            <div style="margin: 20px;">
+            <h2> Get <span style="color: rgb(145, 72, 151);">insights</span> that help <br> your business grow.</h1>
+            <p> Discover the benefits of data analytics and make better <br> decisions regarding revenue, customer <br>
+            experience, and over all efficiency.</p>
+            <div class="para">
+            <p class="same"> <span style="color:white; font-weight: bold;">10K+ </span> <br> Companies</p>
+            <p class="same"> <span style="color:white ;font-weight: bold;">314 </span> <br> Templates</p>
+            <p class="same"> <span style="color:white ;font-weight: bold;">12M+ </span> <br> Queries</p>
+        </div>   
+    </div> 
+        </div>
+        <div class="photo"> 
+            <img src="office.jpg" alt="office-img" width="100%" height="255px">
+        </div>
+    </div>
+</body>
+</html>
